@@ -2,6 +2,8 @@ package com.company;
 
 public class NewFeatureTester {
 
+    final static String solutation = "Ni hao ";
+
     public static void main(String[] args) {
         NewFeatureTester tester = new NewFeatureTester();
 
@@ -24,6 +26,10 @@ public class NewFeatureTester {
         GreetingService greetService1 = msg -> System.out.println("hello "+msg);
 
         GreetingService greetingService2 = (msg -> System.out.println("hi  "+msg));
+
+        GreetingService greetingService3 = msg -> System.out.println(solutation + msg);
+
+        greetingService3.sayMsg(" Ike");
 
         greetService1.sayMsg(" zhang ");
         greetingService2.sayMsg(" xiaoke _");
